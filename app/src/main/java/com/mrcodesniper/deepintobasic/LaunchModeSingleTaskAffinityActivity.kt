@@ -5,6 +5,7 @@ import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 /**
@@ -41,7 +42,7 @@ import androidx.appcompat.app.AppCompatActivity
  *  首页作为启动页面的场景不推荐singleTask 因为每次点击图标会顶到栈顶
  *
  */
-class LaunchModeSingleTaskActivity : AppCompatActivity() {
+class LaunchModeSingleTaskAffinityActivity : AppCompatActivity() {
 
     fun start(){ //适合启动页单独activity oncreate执行 一定会执行并且不在root finish掉 回到后台
         if (!this.isTaskRoot) { // 如果不是第一次启动 当前类不是该Task的根部，那么就是在其他页面启动 不在最底边
@@ -61,6 +62,7 @@ class LaunchModeSingleTaskActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         Log.d(TAG, "$this onCreate TaskId:${taskId}")
         setContentView(R.layout.activity_main)
+        findViewById<TextView>(R.id.tv_test4).setText("跳转flag")
     }
 
     /**
@@ -131,7 +133,11 @@ class LaunchModeSingleTaskActivity : AppCompatActivity() {
     }
 
     fun test3(view: View) {
-        startActivity(Intent(this, LaunchModeSingleTaskActivity::class.java))
+        startActivity(Intent(this, LaunchModeSingleTaskAffinityActivity::class.java))
+    }
+
+    fun test4(view: View) {
+        startActivity(Intent(this, LaunchFlagActivity::class.java))
     }
 
 }

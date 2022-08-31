@@ -45,4 +45,102 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_test"
         app:layout_constraintVertical_bias="0.254" />
 
+    <TextView
+        android:id="@+id/tv_test4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test4"
+        android:text="启动Flag页面"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test"
+        app:layout_constraintVertical_bias="0.391" />
+
+    <TextView
+        android:id="@+id/tv_test5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test5"
+        android:text="55555"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test"
+        app:layout_constraintVertical_bias="0.509" />
+
+    <TextView
+        android:id="@+id/tv_test6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test6"
+        android:text="66666"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test"
+        app:layout_constraintVertical_bias="0.608" />
+
+    <TextView
+        android:id="@+id/tv_test7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test7"
+        android:text="77777"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <TextView
+        android:id="@+id/tv_test8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test8"
+        android:text="88888"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <TextView
+        android:id="@+id/tv_test9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test9"
+        android:text="9999"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <TextView
+        android:id="@+id/tv_test10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="test10"
+        android:text="1000000"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_test"
+        app:layout_constraintVertical_bias="0.877" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

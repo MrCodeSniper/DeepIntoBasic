@@ -27,7 +27,7 @@ import androidx.appcompat.app.AppCompatActivity
 class LaunchModeSingleTopActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.d(TAG, "$this onCreate ")
+        Log.d(TAG, "$this onCreate TaskId:${taskId}")
         setContentView(R.layout.activity_main)
     }
 
@@ -100,6 +100,10 @@ class LaunchModeSingleTopActivity : AppCompatActivity() {
 
     fun test3(view: View) {
         startActivity(Intent(this, LaunchModeSingleTaskActivity::class.java))
+    }
+
+    fun test4(view: View) {
+        startActivity(Intent(this, LaunchFlagActivity::class.java))
     }
 
 }

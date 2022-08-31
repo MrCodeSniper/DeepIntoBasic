@@ -17,11 +17,21 @@
             android:exported="true"
             android:launchMode="standard"
             >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <activity android:name=".LaunchModeAffinityActivity"
+            android:exported="true"
+            android:launchMode="standard"
+            android:taskAffinity=".b"
+            >
+
+
+
         </activity>
 
 
@@ -29,6 +39,12 @@
             android:exported="true"
             android:launchMode="singleTop"
             >
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <activity android:name=".LaunchModeSingleTaskActivity"
@@ -37,6 +53,23 @@
             >
         </activity>
 
+        <activity android:name=".LaunchModeSingleTaskAffinityActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=".b"
+            >
+        </activity>
+
+        <activity android:name=".LaunchFlagActivity"
+            android:exported="true"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
     </application>
 

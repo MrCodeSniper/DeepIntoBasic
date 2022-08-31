@@ -25,7 +25,7 @@ import androidx.appcompat.app.AppCompatActivity
  * 旧页面可交互后 新页面停止和销毁 after stop->destroy
  *
  */
-class LaunchModeActivity : AppCompatActivity() {
+class LaunchModeAffinityActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -94,18 +94,18 @@ class LaunchModeActivity : AppCompatActivity() {
     }
 
     fun test1(view: View) {
-        startActivity(Intent(this@LaunchModeActivity, LaunchModeActivity::class.java))
+        startActivity(Intent(this@LaunchModeAffinityActivity, LaunchModeAffinityActivity::class.java))
     }
 
     fun test2(view: View) {
-        startActivity(Intent(this@LaunchModeActivity, LaunchModeSingleTopActivity::class.java))
+        startActivity(Intent(this@LaunchModeAffinityActivity, LaunchModeSingleTopActivity::class.java))
     }
 
     fun test3(view: View) {
-        startActivity(Intent(this@LaunchModeActivity, LaunchModeSingleTaskActivity::class.java))
+        startActivity(Intent(this@LaunchModeAffinityActivity, LaunchModeSingleTaskActivity::class.java))
     }
 
     fun test4(view: View) {
-        startActivity(Intent(this@LaunchModeActivity, LaunchFlagActivity::class.java))
+        startActivity(Intent(this@LaunchModeAffinityActivity, LaunchFlagActivity::class.java))
     }
 }
